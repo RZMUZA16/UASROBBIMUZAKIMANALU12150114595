@@ -40,13 +40,13 @@ public class Main {
             }
 
         } catch (FileNotFoundException e) {
-            System.err.println("File not found: " + namafile);
+            System.err.println("kok error di: " + namafile);
             e.printStackTrace();
         } catch (IOException e) {
-            System.err.println("Error reading file: " + namafile);
+            System.err.println("ada disini: " + namafile);
             e.printStackTrace();
         } catch (NumberFormatException e) {
-            System.err.println("Error parsing number: " + e.getMessage());
+            System.err.println("di nomor ini bro: " + e.getMessage());
             e.printStackTrace();
         }
 
@@ -78,9 +78,9 @@ public class Main {
             for (BODY r : list) {
                 bw.write("Keliling = " + r.keliling + "\n");
             }
-            System.out.println("Sorted keliling values have been written to " + fileName);
+            System.out.println("keliling di urutin nih " + fileName);
         } catch (IOException e) {
-            System.err.println("Error writing to file: " + fileName);
+            System.err.println("waduh ada error nich: " + fileName);
             e.printStackTrace();
         }
     }
